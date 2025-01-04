@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:code94_labs_sse_assignment/constants/api_constants.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -11,7 +12,7 @@ class CurrencyServiceImpl extends CurrencyService {
   Future<List<Currency>> fetchCurrencyValues({required baseCode}) async {
     return await http
         .get(Uri.parse(
-      'https://v6.exchangerate-api.com/v6/37c2906b1c97f3d690d43608/latest/$baseCode',
+      '${ApiConstants.BASE_URL}${ApiConstants.API_KEY}/latest/$baseCode',
     ))
         .then((response) {
       if (response.statusCode == 200) {
