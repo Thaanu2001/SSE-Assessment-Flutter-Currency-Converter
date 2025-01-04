@@ -2,6 +2,8 @@
 
 <img src="https://github.com/user-attachments/assets/36291973-4462-4121-98d0-3fe383245656" alt="drawing" width="250"/>
 
+Download APK file [here](https://github.com/Thaanu2001/SSE-Assessment-Flutter-Currency-Converter/blob/main/app-release.apk).
+
 ## Overview
 This is a Flutter-based Currency Converter application that enables users to convert currencies using live exchange rates. The app supports multiple target currencies, local persistence of preferences, and a user-friendly interface.
 
