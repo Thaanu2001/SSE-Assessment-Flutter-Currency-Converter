@@ -1,5 +1,7 @@
 # Currency Converter Application
 
+<img src="https://github.com/user-attachments/assets/36291973-4462-4121-98d0-3fe383245656" alt="drawing" width="250"/>
+
 ## Overview
 This is a Flutter-based Currency Converter application that enables users to convert currencies using live exchange rates. The app supports multiple target currencies, local persistence of preferences, and a user-friendly interface.
 
