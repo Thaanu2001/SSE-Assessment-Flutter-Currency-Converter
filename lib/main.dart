@@ -26,6 +26,7 @@ class Main extends StatelessWidget {
         systemNavigationBarDividerColor: Colors.transparent,
       ),
       child: GetMaterialApp(
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         defaultTransition: Transition.cupertino,
         title: "Currency Converter",

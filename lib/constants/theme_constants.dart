@@ -11,12 +11,12 @@ class AppTheme {
   static const Color greyTint3 = Color(0xffd9d9d9);
   static const Color greyTint4 = Color(0xffE9E9E5);
   static const Color greyTint5 = Color(0xfff5f6f5);
-  static const Color greyShade1 = Color(0xFF272727);
+  static const Color greyShade1 = Color(0xFF262525);
 
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
   static const Color red = Color(0xFFEF233C);
-  static const Color green = Color(0xFF32a852);
+  static const Color green = Color(0xFF8DB477);
   static const Color yellow = Color(0xFFf7b500);
   static const Color blue = Color(0xFF0099FA);
 
@@ -24,7 +24,7 @@ class AppTheme {
   static const Color backgroundColor = Color(0xff181818);
 
   static const double defaultPadding = 16.0;
-  static const double defaultBorderRadius = 30;
+  static const double defaultBorderRadius = 12;
 
   static BoxShadow defaultShadow = BoxShadow(
     color: black.withOpacity(0.06),
@@ -40,6 +40,7 @@ class AppTheme {
 
   static ThemeData appTheme = ThemeData(
     scaffoldBackgroundColor: backgroundColor,
+    canvasColor: AppTheme.greyShade1,
     primaryColor: primaryColor,
     appBarTheme: const AppBarTheme(color: primaryColor, centerTitle: true),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -87,34 +88,34 @@ class AppTheme {
         fontWeight: FontWeight.w400,
       ),
       floatingLabelStyle: const TextStyle(
-        color: primaryColor,
+        color: Colors.transparent,
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(defaultBorderRadius),
         borderSide: const BorderSide(
-          width: 1.5,
-          color: greyTint3,
+          width: 0,
+          color: Colors.transparent,
         ),
       ),
       disabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(defaultBorderRadius),
         borderSide: const BorderSide(
-          width: 1.5,
-          color: greyTint3,
+          width: 0,
+          color: Colors.transparent,
         ),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(defaultBorderRadius),
         borderSide: const BorderSide(
-          width: 1.5,
-          color: greyTint2,
+          width: 0,
+          color: Colors.transparent,
         ),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(defaultBorderRadius),
         borderSide: const BorderSide(
-          width: 1.5,
-          color: red,
+          width: 0,
+          color: Colors.transparent,
         ),
       ),
       focusedErrorBorder: OutlineInputBorder(
@@ -124,7 +125,7 @@ class AppTheme {
           color: red,
         ),
       ),
-      fillColor: backgroundColor,
+      fillColor: greyShade1,
       border: InputBorder.none,
       filled: true,
       isDense: true,
